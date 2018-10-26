@@ -7,11 +7,13 @@ if (process.env.NODE_ENV === "development") {
   prefix = "/api"
   api = {
     deviceID: `${prefix}/getdeviceid`,
+    scanQRCode: `${prefix}/scanqrcode`,
   }
 } else if (process.env.NODE_ENV === "production") {
   prefix = ""
   api = {
     deviceID: `${prefix}/getdeviceid`,
+    scanQRCode: `${prefix}/scanqrcode`,
   }
 }
 
