@@ -29,7 +29,7 @@
             if(process.env.NODE_ENV === "development") {
               this.qrcodeUrl = `http://10.12.130.110:8081/?deviceid=${this.id}`
             } else {
-              this.qrcodeUrl = `http://139.159.210.220/?deviceid=${this.id}`
+              this.qrcodeUrl = `http://www.wxapidev.cn/?deviceid=${this.id}`
             }
           })
       },
