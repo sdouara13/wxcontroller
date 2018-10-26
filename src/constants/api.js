@@ -7,10 +7,12 @@ if (process.env.NODE_ENV === "development") {
   prefix = "/api"
   api = {
     deviceID: `${prefix}/getdeviceid`,
-
   }
-} else if (process.env.NODE_ENV === "test") {
-
+} else if (process.env.NODE_ENV === "production") {
+  prefix = ""
+  api = {
+    deviceID: `${prefix}/getdeviceid`,
+  }
 }
 
 export const API = api

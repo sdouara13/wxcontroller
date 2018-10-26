@@ -6,8 +6,6 @@
 </template>
 
 <script>
-  import { API } from "@/constants/API"
-  import { list } from "@/constants/wxAPI"
   export default {
     name: 'App',
     data() {

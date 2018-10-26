@@ -6,7 +6,7 @@
 
 <script>
   import QrcodeVue from 'qrcode.vue'
-  import { API } from "@/constants/API"
+  import { API } from "@/constants/api"
 
 
   export default {
