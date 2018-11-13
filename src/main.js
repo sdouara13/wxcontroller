@@ -1,6 +1,8 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import 'babel-polyfill'
+import vuexstore from 'vuexstore'
+
 import qrcode from 'qrcode.vue'
 
 import axios from 'axios'
@@ -32,6 +34,7 @@ Vue.use(utils);
 new Vue({
   el: '#app',
   router,
+  store: vuexstore,
   components: { App },
   template: '<App/>'
 })

@@ -8,12 +8,14 @@ if (process.env.NODE_ENV === "development") {
   api = {
     deviceID: `${prefix}/getdeviceid`,
     scanQRCode: `${prefix}/scanqrcode`,
+    userinfo: `${prefix}/getuserinfo`,
   }
 } else if (process.env.NODE_ENV === "production") {
   prefix = ""
   api = {
     deviceID: `${prefix}/getdeviceid`,
     scanQRCode: `${prefix}/scanqrcode`,
+    userinfo: `${prefix}/getuserinfo`,
   }
 }
 
